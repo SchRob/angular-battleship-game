@@ -1,6 +1,26 @@
 # Battleships
+This project is a basic Angular 2 example application based on the famous game Battleships. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2. and [Angular Material](https://material.angular.io/).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+## Game
+### Make it run
+
+- clone the repo and install npm packages
+- build the project and serve on development server
+
+### Game Start
+
+- When the browser opens, a new game starts automatically
+- Start a new game by using the menu on the player's board
+
+### Play the Game 
+
+Player clicks on the coordinates in the Opponent's board to fire at the enemy. After that, the opponent strikes back. Hits and misses are marked by a "x" on the coordinate (miss = white, hit red)
+- Player wins, when all Opponent's ships are sunk
+- Player looses, when his ships are sunk
+
+### KI
+
+Don't complaiun - there is no KI. The opponent just fires randomly at your coordinates. It's just a showcase game ;-)
 
 ## Development server
 
