@@ -1,9 +1,11 @@
 # Battleships
 This project is a basic Angular 2 example application based on the famous game Battleships. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2. and [Angular Material](https://material.angular.io/).
 
+## [Demo](http://ng-battleships.gearhostpreview.com/)
+
+
 ## Game
 ### Make it run
-
 - clone the repo and install npm packages
 - build the project and serve on development server
 
