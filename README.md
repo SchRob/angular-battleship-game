@@ -11,6 +11,7 @@ This project is a basic Angular 2 example application based on the famous game B
 
 - When the browser opens, a new game starts automatically
 - Start a new game by using the menu on the player's board
+- All ships are placed automatically
 
 ### Play the Game 
 
