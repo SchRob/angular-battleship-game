@@ -20,7 +20,7 @@ Player clicks on the coordinates in the Opponent's board to fire at the enemy. A
 
 ### KI
 
-Don't complaiun - there is no KI. The opponent just fires randomly at your coordinates. It's just a showcase game ;-)
+Don't complain - there is no KI. The opponent just fires randomly at your coordinates. It's just a showcase game ;-)
 
 ## Development server
 
