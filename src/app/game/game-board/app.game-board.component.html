@@ -1,0 +1,27 @@
+
+<div *ngFor="let coordY of coordinates | filter:{ x: 0 }; let indexX = index">
+    <div style="display:inline-block">
+        <button mat-flat-button [color]="color" [innerHtml]="alphabeticHeader[indexX]"></button>
+    </div>
+    <div *ngFor="let coordX of coordinates | filter:{ y: coordY.y }; let indexY = index" style="display:inline-block">
+        <button *ngIf="indexX===0" mat-flat-button [color]="color" [innerHtml]="coordX.x + 1"></button>
+        <app-game-board-field
+            *ngIf="hideShips"
+            [x]="coordX.x"
+            [y]="coordX.y"
+            [isShipPart]="coordX.isShipPart"
+            [hideShip]="hideShips"
+            [isHit]="coordX.isHit"
+            [enemy]="enemy">
+        </app-game-board-field>
+        <app-game-board-field
+            *ngIf="!hideShips"
+            [x]="coordX.x"
+            [y]="coordX.y"
+            [isShipPart]="coordX.isShipPart"
+            [hideShip]="hideShips"
+            [isHit]="coordX.isHit"
+            [enemy]="enemy">
+        </app-game-board-field>
+    </div>
+</div>

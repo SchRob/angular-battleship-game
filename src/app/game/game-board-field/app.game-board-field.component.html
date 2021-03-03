@@ -1,0 +1,11 @@
+<div style="margin: 2px;" >
+
+    <ng-template [ngIf]="isShipPart && (!hideShip || isHit)">
+        <button mat-flat-button [color]="color" [innerHtml]="title" (click)="onClick()"></button>
+    </ng-template>
+
+    <ng-template [ngIf]="!isShipPart || (hideShip && !isHit)">
+        <button mat-stroked-button [color]="color" [innerHtml]="title" (click)="onClick()"></button>
+    </ng-template>
+
+</div>

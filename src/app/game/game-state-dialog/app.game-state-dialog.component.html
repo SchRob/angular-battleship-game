@@ -1,0 +1,25 @@
+<ng-template [ngIf]="data.state.victory">
+    <h1 mat-dialog-title>VICTORY</h1>
+    <div mat-dialog-content>
+        <div>
+            Oponent fleet destroyed!
+        </div>
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="data.state.loss">
+    <h1 mat-dialog-title>OOOUCH!</h1>
+    <div mat-dialog-content>
+        <div>
+            You lost your fleet!
+        </div>
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="!data.state.victory && !data.state.loss">
+    <h1 mat-dialog-title>OPONENT FIRES</h1>
+    <div mat-dialog-content style="text-align: center;">
+        {{ alphabeticHeader[data.coord.y] + '' + (data.coord.x + 1) }}
+    </div>
+</ng-template>
+
